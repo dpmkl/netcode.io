@@ -1,9 +1,8 @@
-cargo-features = ["edition"]
-
 [package]
 name = "netcode"
 version = "0.3.1"
 authors = ["Val Vanderschaegen <valere.vanderschaegen@gmail.com>"]
+edition = "2018"
 build = "rust/build.rs"
 links = "libnetcode"
 keywords = ["netcode"]
@@ -22,12 +21,12 @@ byteorder = "1.3"
 time = "0.2"
 
 [dev-dependencies]
-env_logger = "0.7"
+env_logger = "0.8"
 lazy_static = "1.4"
 
 [build-dependencies]
 cc = "1.0"
-bindgen = "0.54"
+bindgen = "0.56"
 
 [[bin]]
 path = "rust/src/example.rs"
